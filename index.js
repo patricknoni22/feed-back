@@ -2,13 +2,16 @@
 let oneDivs = document.querySelector("div");
 let twoDiv = document.createElement("div")
 let eleCd = document.querySelectorAll(".one")
-let btns = document.querySelector(".btn")
+let btns = document.querySelectorAll(".btn")
 let arrTxt = []
 
 // let sp1 = document.querySelector(".sp1").textContent;
 // let sp2 = document.querySelector(".sp2").textContent;
 // let sp3 = document.querySelector(".sp3").textContent;
-btns.addEventListener("click", clearDis);
+btns.forEach( btns => {
+  btns.addEventListener("click", clearDis);
+
+});
 
 // arrTxt.push(sp1,sp2,sp3);
 console.log(arrTxt);
